@@ -42,4 +42,37 @@ ionic start ຊືແອັບ ຮູບແບບຂອງໜ້າແອັບ
   2.2 ການສ້າງໜ້າໃໝ່ (New page)
  cmd ເຂົ້າຫາໂຟເດີ ໂປປຣເຈັກ ແລ້ວຂຽນ
 ionic generate page ຊື່ page  ແລ້ວກົດ enter
-ໃນຕົວຢ່າງນີ້ໃຫ້ກຳນົດຊື່ page ແລ້ວ alert
+ໃນຕົວຢ່າງນີ້ໃຫ້ກຳນົດຊື່ page ແລ້ວ alert 
+ແລ້ວໃຫ້ສ້າງປຸ່ມ alert
+2.3 ຄຳສັ່ງເຊືອ່ມໂຍງ ຫາ ໜ້າອື່ນ (next Page)
+ຕົວຢ່າງ: ຈົ່ງສ້າງປຸ່ມຂຶ້ນມາໃໝ່ກົດຊື່ເປັນ Go to Alert ໃຫ້ສ້າງຢູ່ໜ້າ home ເວລາກົດໃສ່ປຸ່ມດັ່ງກ່າວໃຫຫ້ໄປເປີດໜ້າ Alert ຂຶນມາ
+ <ion-button color="danger">
+      Click me
+    </ion-button>
+    ຮູບແບບທີ ໜຶ່ງ 
+        <ion-button color="danger" href="/home">      Click me    </ion-button>
+        ວິທີ2 
+        <ion-button color="danger" routerLink="/home">      Click me    </ion-button>
+## 2.4 ປຸ່ມກັບຄືນ (Back button)
+ເຂົາຫາຟາຍທີ່ຕ້ອງການສ້າງປຸ່ມກັບຄຶນ ຟາຍທີ 2,3,4,5 
+ຢູ່ສ່ວນຫົວ ຢູ່ລຸ່ມແຖວ <ion-toolbar> ໃຫ້ຂຽນ:
+
+  <ion-buttons slot="start">
+      <ion-button defaultHref="/">  </ion-button>
+    </ion-buttons>
+## 2.5  ສ້າງປຸ່ມ alert
+ຢູ່ html
+    <ion-button id="present-alert">click alert</ion-button>
+   <ion-alert
+    trigger="present-alert"
+    header="a short Title Is best"
+    subHeader="A sub header Is optional"
+    message="a message  should be a shourt, complete sentence."
+    [buttons]="alertButton"
+    
+   ></ion-alert>
+
+ ຢູ່ ts 
+    alertButton=['cancel'];
+## 2.6 ກນາສະແດງຂໍ້ຄວາມ Toast
+ເຂົ້າຫາຟາຍ toast.page.html
