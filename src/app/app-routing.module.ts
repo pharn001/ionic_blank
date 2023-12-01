@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'toast',
     loadChildren: () => import('./toast/toast.module').then( m => m.ToastPageModule)
   },
+  {
+    path: 'calendar',
+    loadChildren: () => import('./calendar/calendar.module').then( m => m.CalendarPageModule)
+  },
+  {
+    path: 'card',
+    loadChildren: () => import('./card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'form',
+    loadChildren: () => import('./form/form.module').then( m => m.FormPageModule)
+  },
 ];
 
 @NgModule({

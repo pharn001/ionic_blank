@@ -76,3 +76,37 @@ ionic generate page ຊື່ page  ແລ້ວກົດ enter
     alertButton=['cancel'];
 ## 2.6 ກນາສະແດງຂໍ້ຄວາມ Toast
 ເຂົ້າຫາຟາຍ toast.page.html
+ເວລາກົດປຸ່ມ ຊື່ວ່າ OPen ແລ້ວ ສະແດງຂໍ້ຄວາມອອກມາ 5 ວິນາທີ ແລ້ວໃຫ້ຫາຍໄປ
+## 2.7 ການສະແດງປະຕິທິນ (Calendar)
+ ຈົ່ງສ້າງຟາຍໃໝ່ຂຶ້ນມາກຳນົດ lປັນ calendar ຈາກນັ້ນ ໃຫ້ນຳໃຊ້ເມນູ ເພື່ອເຊື່ອມໂຍງກັບໜ້າດັ່ງກ່າວ 
+  <ion-item>
+    <ion-label>Date</ion-label>
+    <ion-datetime display-format="DD.MM.YYYY HH:mm"></ion-datetime>
+  </ion-item>
+ ## 2.8 ການສະແດງຂໍ້ຄວາມແບບ ion-card
+  ຈົ່ງສ້າງຟາຍໃໝ່ຂຶ້ນມາກຳນົດຊື່ ເປັນ card ຈາກນັ້ນ ໃຫ້ນຳໃຊ້ເມນູ ເພື່ອເຊືອ່ມໂຍງກັບໜ້າດັ່ງກ່າວ
+ <ion-content>
+    <ion-card>  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+      <ion-card-header>
+        <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+        <ion-card-title>Awesome Title</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more , nothjing less.
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  ## 2.9 ການສ້າງຟອມບັນທຶກຂໍ້ມູນ (input)
+  ຈົ່ງສ້າງຟາຍໃໝ່ຂຶ້ນມາກຳນົດຊື່ເປັນ form ຈາກນັ້ນ ໃຫ້ນຳໃຊ້ເມນູ ເພື່ອເຊືອ່ມໂຍງກັບໜ້າດັ່ງກ່າວ
+  ## 2.10  ການສ້າງປຸ່ມ (Button)
+  ຈົ່ງສ້າງ ຟາຍໃໝ່ຂຶ້ນມາກຳນົດຊື່ເປັນ Button ຈາກນັ້ນ ໃໃຫ້ນຳໃຊ້ເມານູ ເພື່ອເຊືອ່ມໂຍງກັບ ໜ້າດັ່ງກ່າວ
+  <ion-button>ໃສ່ຊື່ປຸ່ມ</ion-button>
+  - ຖ້າກຳນົດບໍ່ໃຫ້ຜູ້ນຳໃຊ້ປຸ່ມໄດ້ ແມ່ນໃຊຳ້ຄຳສັ່ງ [disabled]=true
+  ຕົວຢ່າງ: 
+  <ion-button [disabled]="true">Disabled</ion-button>
+
+  - ຮູບແບບ Block,Full
+  <ion-button expand="full">Disabled</ion-button>
+  <ion-button expand="block">Disabled</ion-button>
+  - ຮູບແບບ Shape ເສັ້ນຂອບຂອງປຸ່ມ
+  <ion-button shape="round></ion-button>

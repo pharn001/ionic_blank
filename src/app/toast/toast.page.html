@@ -9,5 +9,18 @@
     <ion-toolbar>
       <ion-title size="large">toast</ion-title>
     </ion-toolbar>
+
+    
+
   </ion-header>
+  <ion-button expand="block" (click)="setOpen(true)">      Click me    </ion-button>
+  <ion-toast
+  [isOpen]="isToastOpen"
+  message="This toast will close in 5 seconds"
+  [duration]="5000"
+  (didDismiss)="setOpen(false)"
+  ></ion-toast>
+  <ion-button (click)="onClickToast('top')">
+    Click me
+  </ion-button>
 </ion-content>
